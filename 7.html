@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refactoring</title>
+</head>
+
+<body>
+  <h1>Refactoring</h1>
+  <!--태그와 선택자가 일치하는 경우 this라고 쓰자-->
+  <!--태그와 다른 선택자가 반복해서 나오는 경우 변수를 주고, 코드에는 그 변수를 쓰자-->
+
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+    if(this.value === 'night') {
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+    } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+    }
+  ">
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+  <script>
+    function linksSetColor(color){
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color = color;
+        i = i + 1;
+        }
+      }
+    function bodySetColor(color){
+      document.querySelector('body').style.color = color;
+    }
+    function bodySetBackgroundColor(color){
+      document.querySelector('body').style.backgroundColor = color;
+    }
+    function nightDayHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'night') {
+        body.SetColor('white');
+        body.SetBackgroundColor('black');
+        self.value = 'day';
+        links.SetColor('yellow');
+      } else {
+        body.SetColor('black');
+        body.SetBackgroundColor('white');
+        self.value = 'night';
+        links.SetColor('blue');
+       }
+      }
+  </script>
+</head>
+
+<body>
+  <h1>Object</h1>
+  <input id="night-day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
+  <ul>
+    <li><a href="#">123123</a></li>
+    <li><a href="#">123123</a></li>
+    <li><a href="#">123123</a></li>
+  </ul>
+  
+</body>
+</html>

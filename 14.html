@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function 3</title>
+</head>
+
+<body>
+  <h1>Function 3</h1>
+  <h2>Return</h2>
+  <!--parameter=매개변수, argument=인자or인수-->    
+  <!--left, right은 parameter(매개변수),
+      2,3과 3,4는 argument(인자)-->
+  <script>
+    function onePlusOne(){
+      document.write(1+1+'<br>');
+    }
+    onePlusOne();
+
+    function sum(left,right){
+      document.write(left+right+'<br>');
+    }
+
+    function sumColorRed(left,right){
+      document.write('<div style="color:red">'+left+right+'</div>');
+    }
+
+    sum(2,3);
+    sumColorRed(2,3);
+    sum(3,4);
+  </script>
+
+  <script>
+    function sum2(left, right){
+      return left+right;
+    }
+    document.write(sum2(2,3)+'<br>');
+    document.write('<div style="color:red">'+sum2(2,3)+'<div>');
+    document.write('<div style="font-size:2rem">'+sum2(2,3)+'<div>');
+  </script>
+
+</body>
+</html>

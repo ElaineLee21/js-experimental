@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object - read&write</title>
+</head>
+
+<body>
+    <h1>Object - read&write</h1>
+    <h2>Create</h2>
+    <!--배열은 [] 객체는 {}-->
+    <!--"+Beverage.gongcha"의 .은 object access operator-->
+    <script>
+        var Beverage = {
+            gongcha :"milk tea",
+            starbucks :"Caffe Latte"
+        };
+        document.write("gongcha : "+Beverage.gongcha+"<br>");
+        document.write("starbucks : "+Beverage.starbucks+"<br>");
+        Beverage.ediya = "macadamia";
+        document.write("ediya : "+Beverage.ediya+"<br>");
+        Beverage["mega coffee"] = "mint frappe";
+        document.write("mega coffee : "+Beverage["mega coffee"]+"<br>");
+        
+    </script>
+
+</body>
+</html>

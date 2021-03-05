@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object - iterate</title>
+</head>
+
+<body>
+  <h1>Object - read&write</h1>
+  <h2>Create</h2>
+  <!--배열은 [] 객체는 {}-->
+  <!--"+Beverage.gongcha"의 .은 object access operator-->
+  <!--gongch,starbucks,ediya,mega coffee는 key값이라고 부름.
+  가져오고 싶은 정보에 도달해주게 하는 열쇠라는 뜻
+  배열에서는 index라고 부름-->
+  <script>
+    var Beverage = {
+        gongcha :"milk tea",
+        starbucks :"Caffe Latte"
+    };
+    document.write("gongcha : "+Beverage.gongcha+"<br>");
+    document.write("starbucks : "+Beverage.starbucks+"<br>");
+    Beverage.ediya = "macadamia";
+    document.write("ediya : "+Beverage.ediya+"<br>");
+    Beverage["mega coffee"] = "mint frappe";
+    document.write("mega coffee : "+Beverage["mega coffee"]+"<br>");
+  </script>
+
+  <h2>Iterate</h2>
+  <!--gongch,starbucks,ediya,mega coffee는 key값이라고 부름.
+  가져오고 싶은 정보에 도달해주게 하는 열쇠라는 뜻
+  배열에서는 index라고 부름-->
+  <!--for는 Beverage라는 객체에 있는 데이터를 하나하나 꺼내서
+  {}안에 있는 코드를 실행시킴-->
+  <script>
+    for(var key in Beverage) {
+      document.write(key + ' : '+Beverage[key]+'<br>');
+    }
+  </script>
+
+
+</body>
+</html>
